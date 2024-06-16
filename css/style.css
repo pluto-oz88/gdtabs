@@ -1,3 +1,5 @@
+@import url("../css/initialize.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,100;1,600&display=swap");
 :root {
   --gdgold: rgba(249, 238, 90, 1);
   --gdblue: rgba(20, 37, 99, 1);
@@ -41,4 +43,31 @@
   --col34: rgba(152, 170, 210, 1);
   --col35: rgba(151, 170, 189, 1);
   --col36: rgba(151, 170, 170, 1);
+}
+
+body {
+  margin: 0;
+}
+
+.tabox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabox > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 16px;
+  border: 2px solid var(--col5);
+  cursor: pointer;
+}
+
+input[type=radio] {
+  opacity: 0;
 }
