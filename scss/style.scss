@@ -2,43 +2,52 @@
 @import "../css/colors";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,100;1,600&display=swap");
 
-:root {
---active: 1
-}
-
 body {
     height: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: linear-gradient(to right, red , yellow);
+    background-image: linear-gradient(to right, rgb(52, 228, 75) , rgb(78, 93, 191));
 }
 
 .tab-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #fff;
-    padding-top: 50px; /* Space for fixed tabs */
+    padding-top: 100px; /* Space for fixed tabs */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);    
+    width: 100%;
+    max-width: inherit;
+    text-align: center;
 }
 
 .tabs {
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-    justify-content: space-around;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    justify-content: start;
+    color: #b94444;
     width: 100%;
     max-width: inherit;
     margin: 0 auto;
     z-index: 1000; /* Ensure tabs are on top */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+label + .tabs:checked {
+    border: 1px solid black;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 12px;
 }
 
 .tabs div {
@@ -49,11 +58,11 @@ body {
 }
 
 .tabs div:hover {
-    background-color: #555;
+    background-color: #ecf80c;
 }
 
 .tabs div:checked {
-    background-color: #666;
+    background-color: #d80909;
 }
 
 input[type="radio"] {

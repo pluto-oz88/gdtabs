@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Tab Webpage with Fixed Tabs and Hover Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .tab-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #fff;
+            padding-top: 50px; /* Space for fixed tabs */
+        }
+
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            justify-content: space-around;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            z-index: 1000; /* Ensure tabs are on top */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .tabs label {
+            padding: 10px;
+            flex-grow: 1;
+            text-align: center;
+            transition: background-color 0.3s, font-weight 0.3s, border-bottom 0.3s;
+            color: #fff;
+            display: block;
+            background-color: #333; /* Set initial background for hover effect */
+        }
+
+        .tabs label:hover {
+            background-color: #555;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: #666;
+            font-weight: bold;
+            border-bottom: 3px solid #ff9800; /* Example active tab style */
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+
+        /* Display content for the checked tab */
+        #tab1:checked ~ .content #content1,
+        #tab2:checked ~ .content #content2,
+        #tab3:checked ~ .content #content3,
+        #tab4:checked ~ .content #content4,
+        #tab5:checked ~ .content #content5,
+        #tab6:checked ~ .content #content6 {
+            display: block;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <!-- <div class="tabs"> -->
+            <input type="radio" id="tab1" name="tab" checked>
+            <label for="tab1">Tab 1</label>
+            
+            <input type="radio" id="tab2" name="tab">
+            <label for="tab2">Tab 2</label>
+            
+            <input type="radio" id="tab3" name="tab">
+            <label for="tab3">Tab 3</label>
+            
+            <input type="radio" id="tab4" name="tab">
+            <label for="tab4">Tab 4</label>
+            
+            <input type="radio" id="tab5" name="tab">
+            <label for="tab5">Tab 5</label>
+            
+            <input type="radio" id="tab6" name="tab">
+            <label for="tab6">Tab 6</label>
+        <!-- </div> -->
+
+        <div class="content">
+            <div class="tab-content" id="content1">
+                <h2>Tab 1 Content</h2>
+                <p>This is the content of the first tab. You can add more text, images, or any other HTML content here.</p>
+            </div>
+            <div class="tab-content" id="content2">
+                <h2>Tab 2 Content</h2>
+                <p>This is the content of the second tab. You can add more text, images, or any other HTML content here.</p>
+            </div>
+            <div class="tab-content" id="content3">
+                <h2>Tab 3 Content</h2>
+                <p>This is the content of the third tab. You can add more text, images, or any other HTML content here.</p>
+            </div>
+            <div class="tab-content" id="content4">
+                <h2>Tab 4 Content</h2>
+                <p>This is the content of the fourth tab. You can add more text, images, or any other HTML content here.</p>
+            </div>
+            <div class="tab-content" id="content5">
+                <h2>Tab 5 Content</h2>
+                <p>This is the content of the fifth tab. You can add more text, images, or any other HTML content here.</p>
+            </div>
+            <div class="tab-content" id="content6">
+                <h2>Tab 6 Content</h2>
+                <p>This is the content of the sixth tab. You can add more text, images, or any other HTML content here.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
