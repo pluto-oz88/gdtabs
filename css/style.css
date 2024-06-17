@@ -45,39 +45,79 @@
   --col36: rgba(151, 170, 170, 1);
 }
 
+:root {
+  --active: 1 ;
+}
+
 body {
+  height: 100%;
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  background-color: linear-gradient(to right, red, yellow);
 }
 
-.tabox {
-  display: flex;
+.tab-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding-top: 50px; /* Space for fixed tabs */
 }
 
-.tabox > * {
+.tabs {
   display: flex;
-  justify-items: center;
-  align-items: center;
-  padding: 8px 16px;
-  border: 2px solid var(--col5);
+  flex-wrap: wrap;
   cursor: pointer;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  max-width: inherit;
+  margin: 0 auto;
+  z-index: 1000; /* Ensure tabs are on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section {
-  display: none;
+.tabs div {
+  padding: 10px 20px;
+  flex-grow: 1;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.tabs div:hover {
+  background-color: #555;
+}
+
+.tabs div:checked {
+  background-color: #666;
 }
 
 input[type=radio] {
-  opacity: 0;
-}/*# sourceMappingURL=style.css.map */
+  display: none;
+}
 
-label,
-input[type='radio'] {
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+#tab1:checked ~ .content #content1,
+#tab2:checked ~ .content #content2,
+#tab3:checked ~ .content #content3,
+#tab4:checked ~ .content #content4,
+#tab5:checked ~ .content #content5,
+#tab6:checked ~ .content #content6 {
   display: block;
-  margin-top: 1em;
-  background-color: bisque;
 }
 
-input:checked {
-  border: none;
-  outline: 2px solid deeppink;
-}
+.content {
+  padding: 20px;
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */
