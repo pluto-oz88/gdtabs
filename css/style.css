@@ -50,24 +50,34 @@ body {
 }
 
 .tabox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .tabox > * {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 8px 16px;
   border: 2px solid var(--col5);
   cursor: pointer;
 }
 
+section {
+  display: none;
+}
+
 input[type=radio] {
   opacity: 0;
+}/*# sourceMappingURL=style.css.map */
+
+label,
+input[type='radio'] {
+  display: block;
+  margin-top: 1em;
+  background-color: bisque;
+}
+
+input:checked {
+  border: none;
+  outline: 2px solid deeppink;
 }
