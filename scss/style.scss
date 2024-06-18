@@ -3,70 +3,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,100;1,600&display=swap");
 
 body {
-    height: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, rgb(52, 228, 75) , rgb(78, 93, 191));
+    background-color: #de7070;
 }
 
 .tab-container {
     width: 100%;
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #fff;
-    padding-top: 100px; /* Space for fixed tabs */
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);    
-    width: 100%;
-    max-width: inherit;
-    text-align: center;
+    padding-top: 50px; /* Space for fixed tabs */
 }
 
 .tabs {
     display: flex;
-    flex-wrap: wrap;
     cursor: pointer;
-    justify-content: start;
-    color: #b94444;
-    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);    
+    width: inherit;
     max-width: inherit;
     margin: 0 auto;
     z-index: 1000; /* Ensure tabs are on top */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-label + .tabs:checked {
-    border: 1px solid black;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 12px;
-}
-
-.tabs div {
+.tabs label {
     padding: 10px 20px;
     flex-grow: 1;
     text-align: center;
     transition: background-color 0.3s;
+    display: block;
 }
 
-.tabs div:hover {
-    background-color: #ecf80c;
-}
-
-.tabs div:checked {
-    background-color: #d80909;
+.tabs label:hover {
+    background-color: #3cadda;
 }
 
 input[type="radio"] {
     display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+    background-color: #666;
+    font-weight: bold;
+    border-bottom: 3px solid #ff9800; /* Example active tab style */
 }
 
 .tab-content {
@@ -79,7 +69,7 @@ input[type="radio"] {
 #tab3:checked ~ .content #content3,
 #tab4:checked ~ .content #content4,
 #tab5:checked ~ .content #content5,
-#tab6:checked ~ .content #content6  {
+#tab6:checked ~ .content #content6 {
     display: block;
 }
 
@@ -87,3 +77,28 @@ input[type="radio"] {
     padding: 20px;
     background-color: #fff;
 }
+
+
+/* New class for active tab */
+.active-tab {
+background-color: #ff9800; /* Change this to your desired active tab color */
+color: #fff; /* Optional: Change text color for better contrast */
+}
+
+/* Apply the active-tab class to the checked tab */
+#tab1:checked ~ .tabs label[for="tab1"],
+#tab2:checked ~ .tabs label[for="tab2"],
+#tab3:checked ~ .tabs label[for="tab3"],
+#tab4:checked ~ .tabs label[for="tab4"],
+#tab5:checked ~ .tabs label[for="tab5"],
+#tab6:checked ~ .tabs label[for="tab6"] {
+background-color: #ff9800; /* Active tab color */
+color: #fff; /* Active tab text color */
+border-bottom: 3px solid #ff9800; /* Active tab border */
+}
+
+
+
+
+
+

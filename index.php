@@ -8,8 +8,7 @@
     
 </head>
 <body>
-    <div class="tab-container">
-      
+<div class="tab-container">
         <input type="radio" id="tab1" name="tab" checked>
         <input type="radio" id="tab2" name="tab">
         <input type="radio" id="tab3" name="tab">
@@ -18,62 +17,44 @@
         <input type="radio" id="tab6" name="tab">
 
 
-        <div class="header">
-          <h1>TreeTopHeights.Com</h1>
-          <div class="tabs">
-              <label for="tab1"><div>Tab 1</div></label>
-              <label for="tab2"><div>Tab 2</div></label>
-              <label for="tab3"><div>Tab 3</div></label>
-              <label for="tab4"><div>Tab 4</div></label>
-              <label for="tab5"><div>Tab 5</div></label>
-              <label for="tab6"><div>Tab 6</div></label>
-          </div>
+        <div class="tabs">
+            <label for="tab1" class="tab-label">Tab 1</label>
+            <label for="tab2" class="tab-label">Tab 2</label>
+            <label for="tab3" class="tab-label">Tab 3</label>
+            <label for="tab4" class="tab-label">Tab 4</label>
+            <label for="tab5" class="tab-label">Tab 5</label>
+            <label for="tab6" class="tab-label">Tab 6</label>
         </div>
 
         <div class="content">
             <div class="tab-content" id="content1">
+            <h1>Index - Working version</h1>
+
                 <h2>Tab 1 Content</h2>
-                <p>MSNBC delivers breaking news, in-depth analysis of politics headlines, as well as commentary and informed perspectives. Find video clips and segments from The Rachel Maddow Show, Morning Joe, The Beat with Ari Melber, Deadline: White House, The ReidOut, All In, Last Word, 11th Hour, and Alex Wagner who brings her breadth of reporting experience to MSNBC primetime. Watch “Alex Wagner Tonight” Tuesday through Friday at 9pm Eastern. </p>
+                <p>This is the content of the first tab. You can add more text, images, or any other HTML content here.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, facilis mollitia. Dolore labore repellendus, enim quaerat consectetur perspiciatis blanditiis eaque, repudiandae laudantium, possimus sint repellat consequuntur reiciendis eos magni? Eius, expedita! Beatae sint reiciendis ullam exercitationem, quod quidem accusantium illum eveniet facere consequuntur ut delectus veritatis temporibus odit nihil. Fuga consectetur enim quo eligendi provident maxime nam culpa laboriosam doloribus eveniet ad, ut nisi, quam iste. Velit, magnam provident non excepturi consectetur eos laboriosam doloribus molestias culpa aperiam sit vero quam at, deleniti et reprehenderit veritatis corrupti labore repellendus voluptatum possimus veniam. Enim nemo, eos cum assumenda excepturi labore aliquam recusandae tempore quaerat dicta facilis magnam obcaecati, natus, aliquid ut autem eum distinctio eaque? Alias ratione voluptates excepturi. Ut ratione porro ipsa! Natus sapiente maiores nesciunt, provident iusto temporibus, odio voluptatum eligendi sint similique sit debitis inventore corrupti quia tenetur numquam vel sunt nobis reprehenderit. Vel totam, dolores vitae laboriosam illo, illum fugiat et hic eaque repellat qui quo facilis architecto cum eveniet quibusdam corporis quod praesentium quis eius. Fuga necessitatibus nostrum totam culpa cum ut, libero, labore amet nisi perspiciatis accusantium at, fugiat excepturi quibusdam. Reiciendis sunt, tenetur cumque molestiae ex ea magni modi veritatis eius hic omnis officiis.  </p>
             </div>
             <div class="tab-content" id="content2">
                 <h2>Tab 2 Content</h2>
-                <p>93,441 views  Jun 14, 2024  #GOP #Trump #Politics
-                On Thursday, Trump made his first visit to Capitol Hill since before the Jan. 6 attack as Republicans gave a hero’s welcome to their party’s presumptive 2024 nominee. The Morning Joe panel discusses.
-                » Subscribe to MSNBC:    / msnbc
-                Download our new MSNBC app for the latest breaking news and daily headlines at a glance: https://www.msnbc.com/information/dow...
-                Follow MSNBC Show Blogs 
-                MaddowBlog: https://www.msnbc.com/maddowblog
-                ReidOut Blog: https://www.msnbc.com/reidoutblog</p>
+                <p>This is the content of the second tab. You can add more text, images, or any other HTML content here.</p>
             </div>
             <div class="tab-content" id="content3">
                 <h2>Tab 3 Content</h2>
                 <p>This is the content of the third tab. You can add more text, images, or any other HTML content here.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
             </div>
             <div class="tab-content" id="content4">
-                <h2>Tab 4 Content</h2>
-                <p>This is the content of the first tab. You can add more text, images, or any other HTML content here.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-            </div>
-            <div class="tab-content" id="content5">
-                <h2>Tab 5 Content</h2>
-                <p>This is the content of the second tab. You can add more text, images, or any other HTML content here.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-            </div>
-            <div class="tab-content" id="content6">
-                <h2>Tab 6 Content</h2>
-                <p>This is the content of the third tab. You can add more text, images, or any other HTML content here.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget elementum orci. Integer vel fermentum odio. Curabitur euismod est non risus commodo, sit amet aliquet sapien euismod. Aliquam erat volutpat. Etiam fringilla vestibulum tortor, a venenatis dui scelerisque in.</p>
-            </div>
+                <h1>Index2-Best</h1>
+    
+                    <h2>Tab 4 Content</h2>
+                    <p>This is the content of the first tab. You can add more text, images, or any other HTML content here.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, facilis mollitia. Dolore labore repellendus, enim quaerat consectetur perspiciatis blanditiis eaque, repudiandae laudantium, possimus sint repellat consequuntur reiciendis eos magni? Eius, expedita! Beatae sint reiciendis ullam exercitationem, quod quidem accusantium illum eveniet facere consequuntur ut delectus veritatis temporibus odit nihil. Fuga consectetur enim quo eligendi provident maxime nam culpa laboriosam doloribus eveniet ad, ut nisi, quam iste. Velit, magnam provident non excepturi consectetur eos laboriosam doloribus molestias culpa aperiam sit vero quam at, deleniti et reprehenderit veritatis corrupti labore repellendus voluptatum possimus veniam. Enim nemo, eos cum assumenda excepturi labore aliquam recusandae tempore quaerat dicta facilis magnam obcaecati, natus, aliquid ut autem eum distinctio eaque? Alias ratione voluptates excepturi. Ut ratione porro ipsa! Natus sapiente maiores nesciunt, provident iusto temporibus, odio voluptatum eligendi sint similique sit debitis inventore corrupti quia tenetur numquam vel sunt nobis reprehenderit. Vel totam, dolores vitae laboriosam illo, illum fugiat et hic eaque repellat qui quo facilis architecto cum eveniet quibusdam corporis quod praesentium quis eius. Fuga necessitatibus nostrum totam culpa cum ut, libero, labore amet nisi perspiciatis accusantium at, fugiat excepturi quibusdam. Reiciendis sunt, tenetur cumque molestiae ex ea magni modi veritatis eius hic omnis officiis.  </p>
+                </div>
+                <div class="tab-content" id="content5">
+                    <h2>Tab 5 Content</h2>
+                    <p>This is the content of the second tab. You can add more text, images, or any other HTML content here.</p>
+                </div>
+                <div class="tab-content" id="content6">
+                    <h2>Tab 6 Content</h2>
+                    <p>This is the content of the third tab. You can add more text, images, or any other HTML content here.</p>
+                </div>
         </div>
     </div>
 </body>
