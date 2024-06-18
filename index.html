@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6 Tab Webpage with Fixed Tabs and Hover Effect</title>
+    <title>6 tabs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,38 +24,39 @@
         .tabs {
             display: flex;
             cursor: pointer;
-            justify-content: space-around;
+            justify-content: flex-start;
+            flex-wrap: wrap;
             background-color: #333;
             color: #fff;
             position: fixed;
             top: 0;
-            left: 0;
-            width: 100%;
-            max-width: 600px;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);    
+            width: inherit;
+            max-width: inherit;
             margin: 0 auto;
             z-index: 1000; /* Ensure tabs are on top */
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .tabs label {
-            padding: 10px;
+            padding: 10px 20px;
             flex-grow: 1;
             text-align: center;
-            transition: background-color 0.3s, font-weight 0.3s, border-bottom 0.3s;
-            color: #fff;
+            transition: background-color 0.3s;
             display: block;
-            background-color: #333; /* Set initial background for hover effect */
         }
 
         .tabs label:hover {
-            background-color: #555;
+            background-color: #3cadda;
         }
 
         input[type="radio"] {
             display: none;
         }
 
-        input[type="radio"]:checked + label {
+        .tabs input[type="radio"]:checked + label {
             background-color: #666;
             font-weight: bold;
             border-bottom: 3px solid #ff9800; /* Example active tab style */
@@ -66,7 +67,6 @@
             padding: 20px;
         }
 
-        /* Display content for the checked tab */
         #tab1:checked ~ .content #content1,
         #tab2:checked ~ .content #content2,
         #tab3:checked ~ .content #content3,
@@ -80,34 +80,59 @@
             padding: 20px;
             background-color: #fff;
         }
+
+
+/* New class for active tab */
+.active-tab {
+    background-color: #ff9800; /* Change this to your desired active tab color */
+    color: #fff; /* Optional: Change text color for better contrast */
+}
+
+/* Apply the active-tab class to the checked tab */
+#tab1:checked ~ .tabs label[for="tab1"],
+#tab2:checked ~ .tabs label[for="tab2"],
+#tab3:checked ~ .tabs label[for="tab3"],
+#tab4:checked ~ .tabs label[for="tab4"],
+#tab5:checked ~ .tabs label[for="tab5"],
+#tab6:checked ~ .tabs label[for="tab6"] {
+    background-color: #ff9800; /* Active tab color */
+    color: #fff; /* Active tab text color */
+    border-bottom: 3px solid #ff9800; /* Active tab border */
+}
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
     <div class="tab-container">
-        <!-- <div class="tabs"> -->
-            <input type="radio" id="tab1" name="tab" checked>
-            <label for="tab1">Tab 1</label>
-            
-            <input type="radio" id="tab2" name="tab">
-            <label for="tab2">Tab 2</label>
-            
-            <input type="radio" id="tab3" name="tab">
-            <label for="tab3">Tab 3</label>
-            
-            <input type="radio" id="tab4" name="tab">
-            <label for="tab4">Tab 4</label>
-            
-            <input type="radio" id="tab5" name="tab">
-            <label for="tab5">Tab 5</label>
-            
-            <input type="radio" id="tab6" name="tab">
-            <label for="tab6">Tab 6</label>
-        <!-- </div> -->
+        <input type="radio" id="tab1" name="tab" checked>
+        <input type="radio" id="tab2" name="tab">
+        <input type="radio" id="tab3" name="tab">
+        <input type="radio" id="tab4" name="tab">
+        <input type="radio" id="tab5" name="tab">
+        <input type="radio" id="tab6" name="tab">
+
+
+        <div class="tabs">
+            <label for="tab1" class="tab-label">Tab 1</label>
+            <label for="tab2" class="tab-label">Tab 2</label>
+            <label for="tab3" class="tab-label">Tab 3</label>
+            <label for="tab4" class="tab-label">Tab 4</label>
+            <label for="tab5" class="tab-label">Tab 5</label>
+            <label for="tab6" class="tab-label">Tab 6</label>
+        </div>
 
         <div class="content">
             <div class="tab-content" id="content1">
+            <h1>Index - Working version</h1>
+
                 <h2>Tab 1 Content</h2>
-                <p>This is the content of the first tab. You can add more text, images, or any other HTML content here.</p>
+                <p>This is the content of the first tab. You can add more text, images, or any other HTML content here.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, facilis mollitia. Dolore labore repellendus, enim quaerat consectetur perspiciatis blanditiis eaque, repudiandae laudantium, possimus sint repellat consequuntur reiciendis eos magni? Eius, expedita! Beatae sint reiciendis ullam exercitationem, quod quidem accusantium illum eveniet facere consequuntur ut delectus veritatis temporibus odit nihil. Fuga consectetur enim quo eligendi provident maxime nam culpa laboriosam doloribus eveniet ad, ut nisi, quam iste. Velit, magnam provident non excepturi consectetur eos laboriosam doloribus molestias culpa aperiam sit vero quam at, deleniti et reprehenderit veritatis corrupti labore repellendus voluptatum possimus veniam. Enim nemo, eos cum assumenda excepturi labore aliquam recusandae tempore quaerat dicta facilis magnam obcaecati, natus, aliquid ut autem eum distinctio eaque? Alias ratione voluptates excepturi. Ut ratione porro ipsa! Natus sapiente maiores nesciunt, provident iusto temporibus, odio voluptatum eligendi sint similique sit debitis inventore corrupti quia tenetur numquam vel sunt nobis reprehenderit. Vel totam, dolores vitae laboriosam illo, illum fugiat et hic eaque repellat qui quo facilis architecto cum eveniet quibusdam corporis quod praesentium quis eius. Fuga necessitatibus nostrum totam culpa cum ut, libero, labore amet nisi perspiciatis accusantium at, fugiat excepturi quibusdam. Reiciendis sunt, tenetur cumque molestiae ex ea magni modi veritatis eius hic omnis officiis.  </p>
             </div>
             <div class="tab-content" id="content2">
                 <h2>Tab 2 Content</h2>
@@ -118,17 +143,19 @@
                 <p>This is the content of the third tab. You can add more text, images, or any other HTML content here.</p>
             </div>
             <div class="tab-content" id="content4">
-                <h2>Tab 4 Content</h2>
-                <p>This is the content of the fourth tab. You can add more text, images, or any other HTML content here.</p>
-            </div>
-            <div class="tab-content" id="content5">
-                <h2>Tab 5 Content</h2>
-                <p>This is the content of the fifth tab. You can add more text, images, or any other HTML content here.</p>
-            </div>
-            <div class="tab-content" id="content6">
-                <h2>Tab 6 Content</h2>
-                <p>This is the content of the sixth tab. You can add more text, images, or any other HTML content here.</p>
-            </div>
+                <h1>Index2-Best</h1>
+    
+                    <h2>Tab 4 Content</h2>
+                    <p>This is the content of the first tab. You can add more text, images, or any other HTML content here.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, facilis mollitia. Dolore labore repellendus, enim quaerat consectetur perspiciatis blanditiis eaque, repudiandae laudantium, possimus sint repellat consequuntur reiciendis eos magni? Eius, expedita! Beatae sint reiciendis ullam exercitationem, quod quidem accusantium illum eveniet facere consequuntur ut delectus veritatis temporibus odit nihil. Fuga consectetur enim quo eligendi provident maxime nam culpa laboriosam doloribus eveniet ad, ut nisi, quam iste. Velit, magnam provident non excepturi consectetur eos laboriosam doloribus molestias culpa aperiam sit vero quam at, deleniti et reprehenderit veritatis corrupti labore repellendus voluptatum possimus veniam. Enim nemo, eos cum assumenda excepturi labore aliquam recusandae tempore quaerat dicta facilis magnam obcaecati, natus, aliquid ut autem eum distinctio eaque? Alias ratione voluptates excepturi. Ut ratione porro ipsa! Natus sapiente maiores nesciunt, provident iusto temporibus, odio voluptatum eligendi sint similique sit debitis inventore corrupti quia tenetur numquam vel sunt nobis reprehenderit. Vel totam, dolores vitae laboriosam illo, illum fugiat et hic eaque repellat qui quo facilis architecto cum eveniet quibusdam corporis quod praesentium quis eius. Fuga necessitatibus nostrum totam culpa cum ut, libero, labore amet nisi perspiciatis accusantium at, fugiat excepturi quibusdam. Reiciendis sunt, tenetur cumque molestiae ex ea magni modi veritatis eius hic omnis officiis.  </p>
+                </div>
+                <div class="tab-content" id="content5">
+                    <h2>Tab 5 Content</h2>
+                    <p>This is the content of the second tab. You can add more text, images, or any other HTML content here.</p>
+                </div>
+                <div class="tab-content" id="content6">
+                    <h2>Tab 6 Content</h2>
+                    <p>This is the content of the third tab. You can add more text, images, or any other HTML content here.</p>
+                </div>
         </div>
     </div>
 </body>
