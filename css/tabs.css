@@ -49,8 +49,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 0, 0.5)), to(rgba(0, 0, 255, 0.5)));
-  background-image: linear-gradient(to right, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+  background-image: linear-gradient(19deg, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+  background-repeat: no-repeat;
 }
 
 .tab-container {
@@ -58,9 +58,6 @@ body {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: black;
   padding-top: 50px;
   top: 0; /* Space for fixed tabs */
 }
@@ -75,7 +72,7 @@ body {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: transparent;
+  background-color: red;
   color: #fff;
   position: fixed;
   -webkit-transition: all 0.3s ease;
@@ -89,8 +86,6 @@ body {
   max-width: inherit;
   margin: 0 auto;
   z-index: 1000; /* Ensure tabs are on top */
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .tabs label {
   padding: 10px 20px;
