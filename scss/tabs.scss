@@ -6,19 +6,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(
-        to right,
-        rgb(255 255 0 / 50%),
-        rgb(0 0 255 / 50%));      
+    background-image: linear-gradient(to right, rgb(255 255 0 / 50%), rgb(0 0 255 / 50%));
 }
 
 .tab-container {
+    position: sticky;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: transparent;
-    padding-top: 50px; /* Space for fixed tabs */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    padding-top: 50px;
+    top: 0; /* Space for fixed tabs */
 }
 
 .tabs {
@@ -29,27 +28,28 @@ body {
     background-color: transparent;
     color: #fff;
     position: fixed;
+    transition: all 0.3s ease;
     top: 0;
     top: 0;
     left: 50%;
-    transform: translate(-50%, 0);    
+    transform: translate(-50%, 0);
     width: inherit;
     max-width: inherit;
     margin: 0 auto;
     z-index: 1000; /* Ensure tabs are on top */
-    
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     label {
-    padding: 10px 20px;
-    flex-grow: 1;
-    text-align: center;
-    transition: background-color 0.3s;
-    display: block;
+        padding: 10px 20px;
+        flex-grow: 1;
+        text-align: center;
+        transition: background-color 0.3s;
+        display: block;
     }
 
     label:hover {
-    background-color: #3cadda;
+        background-color: #3cadda;
     }
 
     input[type="radio"]:checked + label {
@@ -62,8 +62,11 @@ body {
         border: 1px solid black;
         border-top-left-radius: 2px;
         border-top-right-radius: 25px;
-
     }
+}
+
+.tabs.hide {
+    top: -110px;
 }
 
 input[type="radio"] {
@@ -93,11 +96,10 @@ label.tab-label {
     background-color: #fff;
 }
 
-
 /* New class for active tab */
 .active-tab {
-background-color: #ff9800; /* Change this to your desired active tab color */
-color: #fff; /* Optional: Change text color for better contrast */
+    background-color: #ff9800; /* Change this to your desired active tab color */
+    color: #fff; /* Optional: Change text color for better contrast */
 }
 
 /* Apply the active-tab class to the checked tab */
@@ -107,13 +109,7 @@ color: #fff; /* Optional: Change text color for better contrast */
 #tab4:checked ~ .tabs label[for="tab4"],
 #tab5:checked ~ .tabs label[for="tab5"],
 #tab6:checked ~ .tabs label[for="tab6"] {
-background-color: #5900ff; /* Active tab color */
-color: #fff; /* Active tab text color */
-border-bottom: 3px solid transparent; /* Active tab border */
+    background-color: #5900ff; /* Active tab color */
+    color: #fff; /* Active tab text color */
+    border-bottom: 3px solid transparent; /* Active tab border */
 }
-
-
-
-
-
-
